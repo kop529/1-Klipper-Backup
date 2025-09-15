@@ -250,7 +250,7 @@ gcode:
 #filename: ~/printer_data/mmu_macro_vars.cfg
  
 [virtual_sdcard]
-path: /home/os/printer_data/gcodes
+path: /home/os/gcode_files/
 #~/gcode_files # UPDATE THIS FOR YOUR PATH!!!
 on_error_gcode: CANCEL_PRINT
 
@@ -357,20 +357,21 @@ gcode:
     # Completion message
     M117 Filament unload complete
 
+
 #*# <---------------------- SAVE_CONFIG ---------------------->
 #*# DO NOT EDIT THIS BLOCK OR BELOW. The contents are auto-generated.
 #*#
 #*# [bltouch]
-#*# z_offset = 1.110
+#*# z_offset = 1.000
 #*#
 #*# [bed_mesh default]
 #*# version = 1
 #*# points =
-#*# 	  0.115000, 0.047500, 0.032500, 0.015000, 0.065000
-#*# 	  -0.007500, -0.040000, -0.050000, -0.055000, -0.012500
-#*# 	  -0.010000, -0.050000, -0.060000, -0.065000, -0.055000
-#*# 	  0.020000, 0.002500, -0.007500, -0.022500, -0.027500
-#*# 	  0.160000, 0.100000, 0.095000, 0.075000, 0.130000
+#*# 	0.050000, 0.095000, 0.117500, 0.087500, 0.042500
+#*# 	-0.007500, 0.035000, 0.062500, 0.050000, -0.010000
+#*# 	-0.042500, -0.012500, 0.015000, 0.007500, -0.050000
+#*# 	-0.072500, -0.022500, 0.002500, -0.005000, -0.065000
+#*# 	-0.070000, -0.035000, -0.005000, -0.022500, -0.052500
 #*# x_count = 5
 #*# y_count = 5
 #*# mesh_x_pps = 2
