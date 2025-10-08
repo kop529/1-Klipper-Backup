@@ -157,8 +157,8 @@ max_z_accel: 100
 [bltouch]
 sensor_pin: ^PC14
 control_pin: PC13
-x_offset: -37.0
-y_offset: -19.0
+x_offset: -23.0
+y_offset: -14.5
 #z_offset: 2.65 ############
 speed: 20
 pin_move_time: 0.4
@@ -173,9 +173,9 @@ z_hop_speed: 10
 
 [bed_mesh]
 speed: 120
-horizontal_move_z: 10
+horizontal_move_z: 5
 mesh_min: 30,30         # Need to handle head distance with cr-touch (bl_touch)
-mesh_max: 192,211     # Max probe range (230-23,230-14.5)
+mesh_max: 206,215.5     # Max probe range (230-23,230-14.5)
 probe_count: 5,5
 algorithm: bicubic
 
@@ -250,7 +250,7 @@ gcode:
 #filename: ~/printer_data/mmu_macro_vars.cfg
  
 [virtual_sdcard]
-path: /home/os/printer_data/gcodes
+path: /home/os/gcode_files/
 #~/gcode_files # UPDATE THIS FOR YOUR PATH!!!
 on_error_gcode: CANCEL_PRINT
 
@@ -357,20 +357,21 @@ gcode:
     # Completion message
     M117 Filament unload complete
 
+
 #*# <---------------------- SAVE_CONFIG ---------------------->
 #*# DO NOT EDIT THIS BLOCK OR BELOW. The contents are auto-generated.
 #*#
 #*# [bltouch]
-#*# z_offset = 4.190
+#*# z_offset = 1.000
 #*#
 #*# [bed_mesh default]
 #*# version = 1
 #*# points =
-#*# 	0.055000, 0.037500, 0.037500, 0.025000, 0.050000
-#*# 	-0.027500, -0.035000, 0.020000, -0.005000, 0.020000
-#*# 	-0.022500, -0.032500, 0.010000, 0.005000, 0.040000
-#*# 	-0.035000, -0.020000, 0.017500, 0.047500, 0.110000
-#*# 	-0.025000, -0.030000, 0.045000, 0.050000, 0.110000
+#*# 	0.050000, 0.095000, 0.117500, 0.087500, 0.042500
+#*# 	-0.007500, 0.035000, 0.062500, 0.050000, -0.010000
+#*# 	-0.042500, -0.012500, 0.015000, 0.007500, -0.050000
+#*# 	-0.072500, -0.022500, 0.002500, -0.005000, -0.065000
+#*# 	-0.070000, -0.035000, -0.005000, -0.022500, -0.052500
 #*# x_count = 5
 #*# y_count = 5
 #*# mesh_x_pps = 2
@@ -378,6 +379,6 @@ gcode:
 #*# algo = bicubic
 #*# tension = 0.2
 #*# min_x = 30.0
-#*# max_x = 192.0
+#*# max_x = 206.0
 #*# min_y = 30.0
-#*# max_y = 211.0
+#*# max_y = 215.48000000000002
